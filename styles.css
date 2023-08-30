@@ -345,6 +345,25 @@ div.content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+    /* padding: 10px;
+    background-color: green; */
+}
+
+/* Style for radio buttons to look like buttons */
+.radio-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.radio-button:checked {
+    background-color: #007bff;
+    color: #fff;
 }
 
 button {
