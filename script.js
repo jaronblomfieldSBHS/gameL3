@@ -71,29 +71,39 @@
         opt.innerHTML = "";
 
         for (let i = 0; i < Questions[currQuestion].a.length; i++) {
-            const choicesdiv = document.createElement("div");
-            const choice = document.createElement("input");
-            const choiceLabel = document.createElement("label");
+            // Create a button element for each answer choice
+            const choice = document.createElement("button");
+            choice.type = "button"; // Set button type
+            choice.classList.add("choice-button"); // Add a class for styling
+            choice.textContent = Questions[currQuestion].a[i].text; // Set the answer text
 
-            choice.type = "radio"; // Change input type to radio
-            choice.name = "answer";
-            choice.value = i;
-            choice.classList.add("radio-button"); // Apply the custom styling
+            // Add a click event listener to handle user's choice
+            choice.addEventListener("click", function () {
+                handleChoice(i);
+            });
 
-            choiceLabel.classList.add("radio-button-label");
-            choiceLabel.textContent = Questions[currQuestion].a[i].text;
-
-            choicesdiv.appendChild(choice);
-            choicesdiv.appendChild(choiceLabel);
-            opt.appendChild(choicesdiv);
+            // Append the choice button to the options container
+            opt.appendChild(choice);
         }
     }
+
+    // Function to handle the user's choice
+    function handleChoice(selectedIndex) {
+        if (Questions[currQuestion].a[selectedIndex].isCorrect) {
+            score++;
+        }
+
+        nextQuestion();
+    }
+
 
     loadQues();
 
     function loadScore() {
-        const totalScore = document.getElementById("score");
-        totalScore.textContent = `You scored ${score} out of ${Questions.length}`;
+        const scoreElement = document.getElementById("score");
+        if (scoreElement) {
+            scoreElement.textContent = `You scored ${score} out of ${Questions.length}`;
+        }
     }
 
     function nextQuestion() {
@@ -104,7 +114,7 @@
             // Hide the question and options, show the score
             document.getElementById("opt").style.display = "none";
             document.getElementById("ques").style.display = "none";
-            document.getElementById("btn").style.display = "none";
+            // document.getElementById("btn").style.display = "none";
             loadScore();
         }
     }
