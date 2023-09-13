@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- div class that holds navigation bar and page links and logo -->
     <div class="sidenav">
         <img src="images/mockuplogo.png">
         <h1>shiroquil</h1>
@@ -20,13 +21,22 @@
         <a class="active" href="aboutshiroquil.html">-about shiroquil-</a>
     </div>
 
+    <!-- div class that holds the main content of the page -->
     <div class="content">
+        <!-- sub div for sub content like text and images -->
         <div class="morecontainer1">
             <h1>Contact us via email if you have any questions or just want to send a message!</h1>
-            <img src="images/mockuplogo.png" onmouseover="changeImage(this)">
+            <p>(Click the logo below for a surpise)</p>
+            <img id="swapImage" src="images/mockuplogo.png" onclick="changeImage(this)">
+            <!-- javascript that swaps image when the user clicks on it -->
             <script>
                 function changeImage(img) {
-                    img.src = img.src.replace("mockuplogo.png", "sun.png");
+                    var image = document.getElementById('swapImage');
+                    if (image.src.match("sun")) {
+                        image.src = "images/mockuplogo.png";
+                    } else {
+                        image.src = "images/sun.png";
+                    }
                 }
             </script>
             <p>- Email: shiroquil@gmail.com -</p>

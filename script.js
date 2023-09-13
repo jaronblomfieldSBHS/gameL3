@@ -1,59 +1,59 @@
     const Questions = [{
-            q: "q1",
+            q: "Question 1",
             a: [{
-                    text: "a1",
+                    text: "Answer 1",
                     isCorrect: false
                 },
                 {
-                    text: "a2",
+                    text: "Answer 2",
                     isCorrect: false
                 },
                 {
-                    text: "a3",
+                    text: "Answer 3",
                     isCorrect: true
                 },
                 {
-                    text: "a4",
+                    text: "Answer 4",
                     isCorrect: false
                 }
             ]
         },
         {
-            q: "q2",
+            q: "Question 2",
             a: [{
-                    text: "a1",
+                    text: "Answer 1",
                     isCorrect: false
                 },
                 {
-                    text: "a2",
+                    text: "Answer 2",
                     isCorrect: false
                 },
                 {
-                    text: "a3",
+                    text: "Answer 3",
                     isCorrect: false
                 },
                 {
-                    text: "a4",
+                    text: "Answer 4",
                     isCorrect: true
                 }
             ]
         },
         {
-            q: "q3",
+            q: "Question 3",
             a: [{
-                    text: "a1",
+                    text: "Answer 1",
                     isCorrect: false
                 },
                 {
-                    text: "a2",
+                    text: "Answer 2",
                     isCorrect: false
                 },
                 {
-                    text: "a3",
+                    text: "Answer 3",
                     isCorrect: true
                 },
                 {
-                    text: "a4",
+                    text: "Answer 4",
                     isCorrect: false
                 }
             ]

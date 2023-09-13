@@ -332,10 +332,10 @@ div.content {
 }
 
 .panel h1 {
+    margin: 10px;
     color: white;
     font-family: cooper;
-    margin: 10px;
-    padding: 10px;
+    text-align: center;
 }
 
 .question {
@@ -359,8 +359,6 @@ div.content {
 /* Style for radio buttons to look like buttons */
 .radio-button {
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     width: 100px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -384,12 +382,6 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-}
-
-/* Add a hover effect */
-button:hover {
-    background-color: #a74ea5;
-    /* Change the background color on hover */
 }
 
 #score {
