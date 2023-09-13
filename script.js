@@ -128,3 +128,8 @@
 
         nextQuestion();
     }
+
+    function retryQuiz() {
+        // Reload the current page, effectively resetting the quiz
+        location.reload();
+    }

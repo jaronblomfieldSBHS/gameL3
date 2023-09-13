@@ -384,9 +384,21 @@ button {
     cursor: pointer;
 }
 
+#ques {
+    margin: 10px;
+    color: white;
+    font-family: rubik;
+    font-size: 50px;
+    text-align: center;
+}
+
+
 #score {
-    font-size: 30px;
-    color: darkslategray;
+    margin: 10px;
+    color: white;
+    font-family: rubik;
+    font-size: 50px;
+    text-align: center;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
