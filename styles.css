@@ -328,33 +328,25 @@ div.content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
+
 .panel h1 {
-    margin: 10px;
+    margin: 5%;
     color: white;
     font-family: cooper;
     text-align: center;
 }
 
-.question {
-    font-size: 30px;
-    font-family: rubik;
-    color: white;
-    margin: 5%;
-}
 
-.options {
+/* .options {
     font-size: 20px;
     font-family: rubik;
     color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    /* padding: 10px;
-    background-color: green; */
-}
+} */
 
 /* Style for radio buttons to look like buttons */
 .radio-button {
@@ -372,32 +364,46 @@ div.content {
 }
 
 button {
-    margin: 5%;
+    margin: 10px;
     padding: 10px;
+    width: 300px;
+    background-color: #c761d4;
+    box-shadow: 10px 10px #8d4796;
+
     color: white;
     font-family: rubik;
     font-size: 150%;
-    text-align: justify;
-    background-color: #c761d4;
+
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
+#retryBtn {
+    margin: 5%;
+    padding: 10px;
+}
+
 #ques {
-    margin: 10px;
+    margin-bottom: 5%;
     color: white;
     font-family: rubik;
-    font-size: 50px;
+    font-size: 5vh;
     text-align: center;
 }
 
+#opt {
+    margin: 10px;
+    font-size: 20px;
+    font-family: rubik;
+    color: white;
+}
 
 #score {
     margin: 10px;
     color: white;
     font-family: rubik;
-    font-size: 50px;
+    font-size: 200%;
     text-align: center;
 }
 
