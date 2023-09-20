@@ -328,11 +328,11 @@ div.content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    /* Add text alignment for centering content */
 }
 
-
 .panel h1 {
-    margin: 5%;
     color: white;
     font-family: cooper;
     text-align: center;
@@ -385,16 +385,15 @@ button {
 }
 
 #ques {
-    margin-bottom: 5%;
     color: white;
     font-family: rubik;
-    font-size: 5vh;
+    font-size: 2vh;
     text-align: center;
 }
 
 #opt {
     margin: 10px;
-    font-size: 20px;
+    font-size: 10px;
     font-family: rubik;
     color: white;
 }
@@ -405,6 +404,14 @@ button {
     font-family: rubik;
     font-size: 200%;
     text-align: center;
+}
+
+#gameCanvas {
+    border: 1px solid black;
+    background-color: grey;
+
+    width: 1000px;
+    height: 500px;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */

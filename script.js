@@ -133,3 +133,45 @@
         // Reload the current page, effectively resetting the quiz
         location.reload();
     }
+
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+
+    let squareX = canvas.width / 2;
+    let squareY = canvas.height / 2;
+    const squareSize = 30;
+    const moveAmount = 10;
+
+    function drawSquare() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "red";
+        ctx.fillRect(squareX, squareY, squareSize, squareSize);
+    }
+
+    function handleKey(event) {
+        switch (event.key) {
+            case "w":
+                squareY -= moveAmount;
+                break;
+            case "s":
+                squareY += moveAmount;
+                break;
+            case "a":
+                squareX -= moveAmount;
+                break;
+            case "d":
+                squareX += moveAmount;
+                break;
+        }
+
+        // Ensure the square stays within the canvas boundaries
+        squareX = Math.max(0, Math.min(squareX, canvas.width - squareSize));
+        squareY = Math.max(0, Math.min(squareY, canvas.height - squareSize));
+
+        drawSquare();
+    }
+
+    drawSquare();
+
+    // Listen for key presses
+    window.addEventListener("keydown", handleKey);
