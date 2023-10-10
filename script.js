@@ -91,6 +91,9 @@
     function handleChoice(selectedIndex) {
         if (Questions[currQuestion].a[selectedIndex].isCorrect) {
             score++;
+        } else {
+            // Deduct health points for incorrect answers
+            deductHealth();
         }
 
         nextQuestion();
@@ -102,7 +105,7 @@
     function loadScore() {
         const scoreElement = document.getElementById("score");
         if (scoreElement) {
-            scoreElement.textContent = `You scored ${score} out of ${Questions.length}`;
+            scoreElement.textContent = `You scored ${score*1} out of ${(Questions.length)*1}`;
         }
     }
 
@@ -136,16 +139,21 @@
 
     const canvas = document.getElementById("gameCanvas");
     const ctx = canvas.getContext("2d");
-
     let squareX = canvas.width / 2;
     let squareY = canvas.height / 2;
     const squareSize = 30;
     const moveAmount = 10;
+    let healthPoints = 1000; // Initialize player's health points
 
     function drawSquare() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = "red";
         ctx.fillRect(squareX, squareY, squareSize, squareSize);
+
+        // Display health points on the canvas
+        ctx.fillStyle = "white";
+        ctx.font = "100% Arial";
+        ctx.fillText(`Health: ${healthPoints}`, 10, 30);
     }
 
     function handleKey(event) {
@@ -175,3 +183,14 @@
 
     // Listen for key presses
     window.addEventListener("keydown", handleKey);
+
+    // Function to deduct health points for incorrect answers
+    function deductHealth() {
+        healthPoints -= 500;
+        if (healthPoints <= 0) {
+            // Game over logic here
+            alert("Game over! Your health points reached " + healthPoints);
+            location.reload(); // Reload the game
+        }
+        drawSquare();
+    }
