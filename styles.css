@@ -336,17 +336,8 @@ div.content {
     color: white;
     font-family: cooper;
     text-align: center;
+    padding: 10px;
 }
-
-
-/* .options {
-    font-size: 20px;
-    font-family: rubik;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-} */
 
 /* Style for radio buttons to look like buttons */
 .radio-button {
@@ -387,8 +378,9 @@ button {
 #ques {
     color: white;
     font-family: rubik;
-    font-size: 2vh;
+    font-size: 2vw;
     text-align: center;
+    margin: 10px;
 }
 
 #opt {
@@ -402,15 +394,19 @@ button {
     margin: 10px;
     color: white;
     font-family: rubik;
-    font-size: 200%;
+    font-size: 100%;
     text-align: center;
 }
 
+#healthPoints {
+    color: red;
+}
+
 #gameCanvas {
-    border: 1px solid black;
+    border: 5px solid #c761d4;
     background-color: grey;
 
-    width: 1000px;
+    width: 90%;
     height: 500px;
 }
 
