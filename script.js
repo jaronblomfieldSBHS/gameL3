@@ -64,10 +64,14 @@ const Questions = [{
 // Current Question and Score
 let currQuestion = 0;
 let score = 0;
+let healthScore = 1000;
+const maxHealth = 1000;
+
 
 // HTML Elements
 const questionElement = document.getElementById("ques");
 const optionsElement = document.getElementById("opt");
+const healthPointsElement = document.getElementById("healthPoints");
 document.getElementById("retryBtn").addEventListener("click", retryQuiz);
 
 
@@ -94,9 +98,31 @@ function loadQuestion() {
 function handleChoice(selectedIndex) {
     if (Questions[currQuestion].a[selectedIndex].isCorrect) {
         score++;
+    } else {
+        // Deduct 500 points for an incorrect answer
+        healthScore -= 500;
     }
 
-    nextQuestion();
+    updateHealthDisplay();
+
+    // Check if the game is over
+    if (healthScore <= 0) {
+        gameOver();
+    } else {
+        nextQuestion();
+    }
+}
+
+// Update Health Score Display
+function updateHealthDisplay() {
+    healthPointsElement.textContent = `Health Points: ${healthScore}`;
+}
+
+function gameOver() {
+    optionsElement.style.display = "none";
+    questionElement.style.display = "none";
+    updateHealthDisplay(); // Ensure health score is up to date
+    alert("Game Over");
 }
 
 // Load User's Score
@@ -130,5 +156,3 @@ function retryQuiz() {
 
 // Initialize the Quiz
 loadQuestion();
-
-// Rest of your code, including canvas and event listeners, goes here.

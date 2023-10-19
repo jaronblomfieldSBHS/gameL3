@@ -321,6 +321,7 @@ div.content {
 
 .panel {
     margin: 10px;
+    padding: 10px;
     background-color: #9a7bb7;
     border-radius: 10px;
     box-shadow: 10px 10px #8d4796;
@@ -371,16 +372,17 @@ button {
 }
 
 #retryBtn {
-    margin: 5%;
+    margin: 10px;
     padding: 10px;
 }
 
 #ques {
     color: white;
     font-family: rubik;
-    font-size: 2vw;
+    font-size: 150%;
     text-align: center;
     margin: 10px;
+    padding: 10px;
 }
 
 #opt {
@@ -399,7 +401,16 @@ button {
 }
 
 #healthPoints {
-    color: red;
+    color: white;
+    font-family: rubik;
+    font-size: 150%;
+    margin: 10px;
+    padding: 10px;
+
+    background-color: gray;
+    border: solid 5px #c761d4;
+    border-radius: 10px;
+    box-shadow: 10px 10px #8d4796;
 }
 
 #gameCanvas {
