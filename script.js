@@ -61,11 +61,18 @@ const Questions = [{
     }
 ];
 
+const canvas = document.getElementById("gameCanvas");
+const canvasContext = canvas.getContext("2d");
+
 // Current Question and Score
 let currQuestion = 0;
 let score = 0;
 let healthScore = 1000;
 const maxHealth = 1000;
+
+//player varaibles
+var player = new Image();
+player.src = "images/catsprite1.png";
 
 
 // HTML Elements
@@ -74,6 +81,19 @@ const optionsElement = document.getElementById("opt");
 const healthPointsElement = document.getElementById("healthPoints");
 document.getElementById("retryBtn").addEventListener("click", retryQuiz);
 
+function gameLoop() {
+    // Clear the canvas
+    canvasContext.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw game elements
+    drawImg(player, 125, 100, 50, 50); // Example: Drawing the player
+
+    // Call the next frame of the animation
+    requestAnimationFrame(gameLoop);
+}
+
+// Start the game loop
+gameLoop();
 
 // Load Question and Answer Choices
 function loadQuestion() {
@@ -156,3 +176,12 @@ function retryQuiz() {
 
 // Initialize the Quiz
 loadQuestion();
+
+function colorRect(x, y, w, h, c) {
+    canvasContext.fillStyle = c;
+    canvasContext.fillRect(x, y, w, h);
+}
+
+function drawImg(src, x, y, w, h) {
+    canvasContext.drawImage(src, x, y, w, h);
+}
