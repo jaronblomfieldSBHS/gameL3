@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Shiroquil</title>
+</head>
+
+<body>
+    <!-- div class that holds navigation bar and page links and logo -->
+    <div class="sidenav">
+        <img src="images/mockuplogo.png">
+        <h1>shiroquil</h1>
+        <a href="welcome.html">-welcome-</a>
+        <a href="whatismotivation.html">-what is motivation-</a>
+        <a href="theeffects.html">-the effects-</a>
+        <a href="stepstobeatingit.html">-steps to beating it-</a>
+        <a href="quizpage.html">-quiz-</a>
+        <a class="active" href="aboutshiroquil.html">-about shiroquil-</a>
+    </div>
+
+    <!-- div class that holds the main content of the page -->
+    <div class="content">
+        <!-- sub div for sub content like text and images -->
+        <div class="morecontainer1">
+            <h1>Contact us via email if you have any questions or just want to send a message!</h1>
+            <p>(Click the logo below for a surpise)</p>
+            <img id="swapImage" src="images/mockuplogo.png" onclick="changeImage(this)">
+            <!-- javascript that swaps image when the user clicks on it -->
+            <script>
+                function changeImage(img) {
+                    var image = document.getElementById('swapImage');
+                    if (image.src.match("sun")) {
+                        image.src = "images/mockuplogo.png";
+                    } else {
+                        image.src = "images/sun.png";
+                    }
+                }
+            </script>
+            <p>- Email: shiroquil@gmail.com -</p>
+        </div>
+    </div>
+</body>
+
+</html>

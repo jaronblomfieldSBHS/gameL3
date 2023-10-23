@@ -74,10 +74,6 @@ const maxHealth = 1000;
 var player = new Image();
 player.src = "images/catsprite1.png";
 
-//enemy varaibles
-var enemy = new Image();
-enemy.src = "images/FiIELbYWQAETFlk.jpg";
-
 
 // HTML Elements
 const questionElement = document.getElementById("ques");
