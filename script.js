@@ -69,6 +69,7 @@ let currQuestion = 0;
 let score = 0;
 let healthScore = 1000;
 const maxHealth = 1000;
+let frameCount = 0; // Added frame count variable
 
 //player varaibles
 var player = new Image();
@@ -77,9 +78,6 @@ player.src = "images/catsprite1.png";
 //enemy varaibles
 var enemy = new Image();
 enemy.src = "images/FiIELbYWQAETFlk.jpg";
-var enemyAttack = new Image();
-enemyAttack.src = "images/redsquare.png";
-
 
 // HTML Elements
 const questionElement = document.getElementById("ques");
@@ -92,13 +90,21 @@ function gameLoop() {
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
 
     // Draw game elements
-    drawImg(player, 125, 100, 50, 50); //drawing the player
-    drawImg(enemy, 125, 10, 50, 50); //drawing the enemy
-    // colorRect(125, 100, 50, 50, 'red');
-    drawImg(enemyAttack, 125, 10, 50, 50);
+    if (frameCount > 0) {
+        // Draw the player as red if frameCount is positive
+        colorRect(125, 100, 50, 50, 'red');
+    } else {
+        drawImg(player, 125, 100, 50, 50); // Drawing the player normally
+    }
+    drawImg(enemy, 125, 10, 50, 50); // Drawing the enemy
 
     // Call the next frame of the animation
     requestAnimationFrame(gameLoop);
+
+    // Decrement frame count
+    if (frameCount > 0) {
+        frameCount--;
+    }
 }
 
 // Start the game loop
@@ -130,7 +136,7 @@ function handleChoice(selectedIndex) {
     } else {
         // Deduct 500 points for an incorrect answer
         healthScore -= 500;
-        colorRect(125, 100, 50, 50, 'red');
+        frameCount = 10; // Set frame count to 10 when health is deducted
     }
 
     updateHealthDisplay();
