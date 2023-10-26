@@ -69,7 +69,12 @@ let currQuestion = 0;
 let score = 0;
 let healthScore = 1000;
 const maxHealth = 1000;
+
 let frameCount = 0; // Added frame count variable
+let enemyFlash = false;
+let enemyFlashFrameCount = 0;
+const maxEnemyFlashFrameCount = 10;
+
 
 //player varaibles
 var player = new Image();
@@ -96,7 +101,15 @@ function gameLoop() {
     } else {
         drawImg(player, 125, 100, 50, 50); // Drawing the player normally
     }
-    drawImg(enemy, 125, 10, 50, 50); // Drawing the enemy
+
+    // Draw the enemy based on flash state
+    if (enemyFlash && enemyFlashFrameCount > 0) {
+        colorRect(125, 10, 50, 50, 'red'); // Display enemy as a red square
+        enemyFlashFrameCount--;
+    } else {
+        drawImg(enemy, 125, 10, 50, 50); // Drawing the enemy normally
+        enemyFlash = false; // Reset enemy flash state
+    }
 
     // Call the next frame of the animation
     requestAnimationFrame(gameLoop);
@@ -106,6 +119,7 @@ function gameLoop() {
         frameCount--;
     }
 }
+
 
 // Start the game loop
 gameLoop();
@@ -134,16 +148,13 @@ function handleChoice(selectedIndex) {
     if (Questions[currQuestion].a[selectedIndex].isCorrect) {
         score++;
 
-        // Change the enemy to a red image for a frame (frameCount = 1)
-        frameCount = 1;
-        enemy.src = "images/guac.jpg";
+        // Set enemy flash frame count
+        enemyFlashFrameCount = maxEnemyFlashFrameCount;
+        enemyFlash = true;
     } else {
         // Deduct 500 points for an incorrect answer
         healthScore -= 500;
         frameCount = 10; // Set frame count to 10 when health is deducted
-
-        // Change the enemy back to the original enemy image
-        enemy.src = "images/FiIELbYWQAETFlk.jpg";
     }
 
     updateHealthDisplay();
