@@ -210,7 +210,8 @@ let score = 0;
 let healthScore = 1000;
 const maxHealth = 1000;
 
-let frameCount = 0; // Added frame count variable
+//frame variables for attacking and being attacked
+let frameCount = 0;
 let enemyFlash = false;
 let enemyFlashFrameCount = 0;
 const maxEnemyFlashFrameCount = 10;
@@ -292,8 +293,8 @@ function handleChoice(selectedIndex) {
         enemyFlashFrameCount = maxEnemyFlashFrameCount;
         enemyFlash = true;
     } else {
-        // Deduct 500 points for an incorrect answer
-        healthScore -= 500;
+        // Deduct 100 points for an incorrect answer
+        healthScore -= 100;
         frameCount = 10; // Set frame count to 10 when health is deducted
     }
 
@@ -323,7 +324,18 @@ function gameOver() {
 function loadScore() {
     const scoreElement = document.getElementById("score");
     scoreElement.textContent = `You scored ${score} out of ${Questions.length}`;
+
+    // Check if the total score is 7-10 and displays an alert
+    if (score >= 7 && score <= 10) {
+        alert("You defeated the Enemy!");
+    }
+
+    //check if the total score is 1-6 and displays an alert
+    if (score <= 6 && score >= 1) {
+        alert("You did not defeat the Enemy!");
+    }
 }
+
 
 // Move to the Next Question
 function nextQuestion() {
