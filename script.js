@@ -133,10 +133,17 @@ function loadQuestion() {
 function handleChoice(selectedIndex) {
     if (Questions[currQuestion].a[selectedIndex].isCorrect) {
         score++;
+
+        // Change the enemy to a red image for a frame (frameCount = 1)
+        frameCount = 1;
+        enemy.src = "images/guac.jpg";
     } else {
         // Deduct 500 points for an incorrect answer
         healthScore -= 500;
         frameCount = 10; // Set frame count to 10 when health is deducted
+
+        // Change the enemy back to the original enemy image
+        enemy.src = "images/FiIELbYWQAETFlk.jpg";
     }
 
     updateHealthDisplay();
