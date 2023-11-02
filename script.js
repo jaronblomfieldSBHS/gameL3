@@ -248,6 +248,11 @@ function gameLoop() {
     // Clear the canvas
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
 
+     // Draw the background image
+     const backgroundImage = new Image();
+     backgroundImage.src = "images/background.png";
+     canvasContext.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+
     // Draw game elements
     if (frameCount > 0) {
         // Draw the player as red if frameCount is positive
@@ -258,10 +263,10 @@ function gameLoop() {
 
     // Draw the enemy based on flash state
     if (enemyFlash && enemyFlashFrameCount > 0) {
-        drawImg(eattack, 125, 10, 50, 50); // Display enemy as a red square
+        drawImg(eattack, 125, 30, 50, 50); // Display enemy as a red square
         enemyFlashFrameCount--;
     } else {
-        drawImg(enemy, 125, 10, 50, 50); // Drawing the enemy normally
+        drawImg(enemy, 125, 30, 50, 50); // Drawing the enemy normally
         enemyFlash = false; // Reset enemy flash state
     }
 
