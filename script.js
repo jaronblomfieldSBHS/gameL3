@@ -216,14 +216,18 @@ let enemyFlash = false;
 let enemyFlashFrameCount = 0;
 const maxEnemyFlashFrameCount = 10;
 
+let frameCounter = 0; // Added frame counter variable
+const maxFrameCounter = 15; // Adjust this value to control the speed of animation
 
 //player varaibles
 var player = new Image();
 player.src = "images/catsprite1.png";
+var playerFrame = 1;
 
 //enemy varaibles
 var enemy = new Image();
 enemy.src = "images/enemysprite1.png";
+var enemyFrame = 1;
 
 // HTML Elements
 const questionElement = document.getElementById("ques");
@@ -259,6 +263,19 @@ function gameLoop() {
     if (frameCount > 0) {
         frameCount--;
     }
+
+     // Update player frame for animation
+     frameCounter++;
+     if (frameCounter >= maxFrameCounter) {
+         if (playerFrame === 1) {
+             player.src = "images/catsprite2.png";
+             playerFrame = 2;
+         } else {
+             player.src = "images/catsprite1.png";
+             playerFrame = 1;
+         }
+         frameCounter = 0; // Reset frame counter
+     }
 }
 
 
