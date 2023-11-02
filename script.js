@@ -1,204 +1,204 @@
 // Quiz Questions and Answers
 const Questions = [{
-        q: "-question 1-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: true
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 2-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: true
-            }
-        ]
-    },
-    {
-        q: "-question 3-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: true
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 4-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: true
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 5-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: true
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 6-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: true
-            }
-        ]
-    },
-    {
-        q: "-question 7-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: true
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 8-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: true
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 9-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: true
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 10-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: true
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    }
+    q: "What is the scientific name for the domestic cat?",
+    a: [{
+            text: "Felis catus",
+            isCorrect: true
+        },
+        {
+            text: "Canis familiaris",
+            isCorrect: false
+        },
+        {
+            text: "Panthera leo",
+            isCorrect: false
+        },
+        {
+            text: "Oryctolagus cuniculus",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What's a cat's favorite bedtime story?",
+    a: [{
+            text: "Puss in Boots",
+            isCorrect: false
+        },
+        {
+            text: "The Great Catsby",
+            isCorrect: false
+        },
+        {
+            text: "Alice in Whiskerland",
+            isCorrect: true
+        },
+        {
+            text: "The Wizard of Paws",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "How many whiskers does the average cat have?",
+    a: [{
+            text: "8",
+            isCorrect: false
+        },
+        {
+            text: "12",
+            isCorrect: false
+        },
+        {
+            text: "16",
+            isCorrect: true
+        },
+        {
+            text: "20",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What is a group of cats called?",
+    a: [{
+            text: "Flock",
+            isCorrect: false
+        },
+        {
+            text: "Herd",
+            isCorrect: false
+        },
+        {
+            text: "Clowder",
+            isCorrect: true
+        },
+        {
+            text: "Pack",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What's a cat's secret talent?",
+    a: [{
+            text: "Juggling fish",
+            isCorrect: false
+        },
+        {
+            text: "Singing opera",
+            isCorrect: false
+        },
+        {
+            text: "Breakdancing",
+            isCorrect: true
+        },
+        {
+            text: "Solving crossword puzzles",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What is the average lifespan of an indoor cat?",
+    a: [{
+            text: "5-8 years",
+            isCorrect: false
+        },
+        {
+            text: "10-13 years",
+            isCorrect: true
+        },
+        {
+            text: "15-18 years",
+            isCorrect: false
+        },
+        {
+            text: "20-23 years",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "Which cat breed is known for its curly coat?",
+    a: [{
+            text: "Persian",
+            isCorrect: false
+        },
+        {
+            text: "Bengal",
+            isCorrect: false
+        },
+        {
+            text: "Scottish Fold",
+            isCorrect: true
+        },
+        {
+            text: "Russian Blue",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What is the largest domestic cat breed?",
+    a: [{
+            text: "Siamese",
+            isCorrect: false
+        },
+        {
+            text: "Maine Coon",
+            isCorrect: true
+        },
+        {
+            text: "Bengal",
+            isCorrect: false
+        },
+        {
+            text: "Sphynx",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "How do cats stay fit?",
+    a: [{
+            text: "Zumba classes",
+            isCorrect: true
+        },
+        {
+            text: "Extreme hide and seek",
+            isCorrect: false
+        },
+        {
+            text: "Yoga sessions",
+            isCorrect: false
+        },
+        {
+            text: "Marathon napping",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What is the most popular breed of cat in the United States?",
+    a: [{
+            text: "Siamese",
+            isCorrect: false
+        },
+        {
+            text: "Persian",
+            isCorrect: false
+        },
+        {
+            text: "Maine Coon",
+            isCorrect: true
+        },
+        {
+            text: "Bengal",
+            isCorrect: false
+        }
+    ]
+}
 ];
 
 const canvas = document.getElementById("gameCanvas");
