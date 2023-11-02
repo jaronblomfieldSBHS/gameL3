@@ -201,6 +201,7 @@ const Questions = [{
 }
 ];
 
+// Canvas and Context Setup
 const canvas = document.getElementById("gameCanvas");
 const canvasContext = canvas.getContext("2d");
 
@@ -345,7 +346,7 @@ function handleChoice(selectedIndex) {
 function updateHealthDisplay() {
     healthPointsElement.textContent = `Health Points: ${healthScore}`;
 }
-
+// Game over alert for when player loses the game
 function gameOver() {
     optionsElement.style.display = "none";
     questionElement.style.display = "none";
@@ -396,15 +397,18 @@ function retryQuiz() {
 // Initialize the Quiz
 loadQuestion();
 
+// Drawing a colored rectangle on the canvas
 function colorRect(x, y, w, h, c) {
     canvasContext.fillStyle = c;
     canvasContext.fillRect(x, y, w, h);
 }
 
+// Drawing an image on the canvas
 function drawImg(src, x, y, w, h) {
     canvasContext.drawImage(src, x, y, w, h);
 }
 
+// Displaying rules upon page load
 window.onload = function() {
     alert("Rules:\n\n1. Answer the questions to defeat the enemy.\n2. Each correct answer gives you a point.\n3. Incorrect answers deduct 100 health points.\n4. Reach 0 health points to lose the game.\n5. Correctly answer 7 or more questions to win. \n\n You can retry at any point with the 'Retry' button!");
 };
