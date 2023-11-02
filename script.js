@@ -404,3 +404,7 @@ function colorRect(x, y, w, h, c) {
 function drawImg(src, x, y, w, h) {
     canvasContext.drawImage(src, x, y, w, h);
 }
+
+window.onload = function() {
+    alert("Rules:\n\n1. Answer the questions to defeat the enemy.\n2. Each correct answer gives you a point.\n3. Incorrect answers deduct 100 health points.\n4. Reach 0 health points to lose the game.\n5. Correctly answer 7 or more questions to win. \n\n You can retry at any point with the 'Retry' button!");
+};
