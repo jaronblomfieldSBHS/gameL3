@@ -274,6 +274,14 @@ function gameLoop() {
              player.src = "images/catsprite1.png";
              playerFrame = 1;
          }
+
+         if (enemyFrame === 1) {
+            enemy.src = "images/enemysprite2.png";
+            enemyFrame = 2;
+        } else {
+            enemy.src = "images/enemysprite1.png";
+            enemyFrame = 1;
+        }
          frameCounter = 0; // Reset frame counter
      }
 }
