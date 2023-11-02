@@ -223,7 +223,7 @@ player.src = "images/catsprite1.png";
 
 //enemy varaibles
 var enemy = new Image();
-enemy.src = "images/FiIELbYWQAETFlk.jpg";
+enemy.src = "images/enemysprite1.png";
 
 // HTML Elements
 const questionElement = document.getElementById("ques");
