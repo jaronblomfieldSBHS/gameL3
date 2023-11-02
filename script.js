@@ -217,7 +217,7 @@ let enemyFlashFrameCount = 0;
 const maxEnemyFlashFrameCount = 10;
 
 let frameCounter = 0; // Added frame counter variable
-const maxFrameCounter = 15; // Adjust this value to control the speed of animation
+const maxFrameCounter = 20; // Adjust this value to control the speed of animation
 
 //player varaibles
 var player = new Image();
@@ -228,6 +228,14 @@ var playerFrame = 1;
 var enemy = new Image();
 enemy.src = "images/enemysprite1.png";
 var enemyFrame = 1;
+
+//player attacked variables
+var pattack = new Image();
+pattack.src = "images/pow.png";
+
+//enemy attacked variables
+var eattack = new Image();
+eattack.src = "images/slice.png";
 
 // HTML Elements
 const questionElement = document.getElementById("ques");
@@ -242,14 +250,14 @@ function gameLoop() {
     // Draw game elements
     if (frameCount > 0) {
         // Draw the player as red if frameCount is positive
-        colorRect(125, 100, 50, 50, 'red');
+        drawImg(pattack, 125, 100, 50, 50);
     } else {
         drawImg(player, 125, 100, 50, 50); // Drawing the player normally
     }
 
     // Draw the enemy based on flash state
     if (enemyFlash && enemyFlashFrameCount > 0) {
-        colorRect(125, 10, 50, 50, 'red'); // Display enemy as a red square
+        drawImg(eattack, 125, 10, 50, 50); // Display enemy as a red square
         enemyFlashFrameCount--;
     } else {
         drawImg(enemy, 125, 10, 50, 50); // Drawing the enemy normally
