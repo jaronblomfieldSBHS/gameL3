@@ -1,206 +1,207 @@
 // Quiz Questions and Answers
 const Questions = [{
-        q: "-question 1-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: true
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 2-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: true
-            }
-        ]
-    },
-    {
-        q: "-question 3-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: true
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 4-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: true
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 5-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: true
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 6-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: true
-            }
-        ]
-    },
-    {
-        q: "-question 7-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: true
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 8-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: true
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 9-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: false
-            },
-            {
-                text: "Answer 2",
-                isCorrect: true
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        q: "-question 10-",
-        a: [{
-                text: "Answer 1",
-                isCorrect: true
-            },
-            {
-                text: "Answer 2",
-                isCorrect: false
-            },
-            {
-                text: "Answer 3",
-                isCorrect: false
-            },
-            {
-                text: "Answer 4",
-                isCorrect: false
-            }
-        ]
-    }
+    q: "What is the scientific name for the domestic cat?",
+    a: [{
+            text: "Felis catus",
+            isCorrect: true
+        },
+        {
+            text: "Canis familiaris",
+            isCorrect: false
+        },
+        {
+            text: "Panthera leo",
+            isCorrect: false
+        },
+        {
+            text: "Oryctolagus cuniculus",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What's a cat's favorite bedtime story?",
+    a: [{
+            text: "Puss in Boots",
+            isCorrect: false
+        },
+        {
+            text: "The Great Catsby",
+            isCorrect: false
+        },
+        {
+            text: "Alice in Whiskerland",
+            isCorrect: true
+        },
+        {
+            text: "The Wizard of Paws",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "How many whiskers does the average cat have?",
+    a: [{
+            text: "8",
+            isCorrect: false
+        },
+        {
+            text: "12",
+            isCorrect: false
+        },
+        {
+            text: "16",
+            isCorrect: true
+        },
+        {
+            text: "20",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What is a group of cats called?",
+    a: [{
+            text: "Flock",
+            isCorrect: false
+        },
+        {
+            text: "Herd",
+            isCorrect: false
+        },
+        {
+            text: "Clowder",
+            isCorrect: true
+        },
+        {
+            text: "Pack",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What's a cat's secret talent?",
+    a: [{
+            text: "Juggling fish",
+            isCorrect: false
+        },
+        {
+            text: "Singing opera",
+            isCorrect: false
+        },
+        {
+            text: "Breakdancing",
+            isCorrect: true
+        },
+        {
+            text: "Solving crossword puzzles",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What is the average lifespan of an indoor cat?",
+    a: [{
+            text: "5-8 years",
+            isCorrect: false
+        },
+        {
+            text: "10-13 years",
+            isCorrect: true
+        },
+        {
+            text: "15-18 years",
+            isCorrect: false
+        },
+        {
+            text: "20-23 years",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "Which cat breed is known for its curly coat?",
+    a: [{
+            text: "Persian",
+            isCorrect: false
+        },
+        {
+            text: "Bengal",
+            isCorrect: false
+        },
+        {
+            text: "Scottish Fold",
+            isCorrect: true
+        },
+        {
+            text: "Russian Blue",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What is the largest domestic cat breed?",
+    a: [{
+            text: "Siamese",
+            isCorrect: false
+        },
+        {
+            text: "Maine Coon",
+            isCorrect: true
+        },
+        {
+            text: "Bengal",
+            isCorrect: false
+        },
+        {
+            text: "Sphynx",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "How do cats stay fit?",
+    a: [{
+            text: "Zumba classes",
+            isCorrect: true
+        },
+        {
+            text: "Extreme hide and seek",
+            isCorrect: false
+        },
+        {
+            text: "Yoga sessions",
+            isCorrect: false
+        },
+        {
+            text: "Marathon napping",
+            isCorrect: false
+        }
+    ]
+},
+{
+    q: "What is the most popular breed of cat in the United States?",
+    a: [{
+            text: "Siamese",
+            isCorrect: false
+        },
+        {
+            text: "Persian",
+            isCorrect: false
+        },
+        {
+            text: "Maine Coon",
+            isCorrect: true
+        },
+        {
+            text: "Bengal",
+            isCorrect: false
+        }
+    ]
+}
 ];
 
+// Canvas and Context Setup
 const canvas = document.getElementById("gameCanvas");
 const canvasContext = canvas.getContext("2d");
 
@@ -216,14 +217,26 @@ let enemyFlash = false;
 let enemyFlashFrameCount = 0;
 const maxEnemyFlashFrameCount = 10;
 
+let frameCounter = 0; // Added frame counter variable
+const maxFrameCounter = 20; // Adjust this value to control the speed of animation
 
 //player varaibles
 var player = new Image();
 player.src = "images/catsprite1.png";
+var playerFrame = 1;
 
 //enemy varaibles
 var enemy = new Image();
-enemy.src = "images/FiIELbYWQAETFlk.jpg";
+enemy.src = "images/enemysprite1.png";
+var enemyFrame = 1;
+
+//player attacked variables
+var pattack = new Image();
+pattack.src = "images/pow.png";
+
+//enemy attacked variables
+var eattack = new Image();
+eattack.src = "images/slice.png";
 
 // HTML Elements
 const questionElement = document.getElementById("ques");
@@ -235,20 +248,25 @@ function gameLoop() {
     // Clear the canvas
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
 
+     // Draw the background image
+     const backgroundImage = new Image();
+     backgroundImage.src = "images/background.png";
+     canvasContext.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+
     // Draw game elements
     if (frameCount > 0) {
         // Draw the player as red if frameCount is positive
-        colorRect(125, 100, 50, 50, 'red');
+        drawImg(pattack, 125, 100, 50, 50);
     } else {
         drawImg(player, 125, 100, 50, 50); // Drawing the player normally
     }
 
     // Draw the enemy based on flash state
     if (enemyFlash && enemyFlashFrameCount > 0) {
-        colorRect(125, 10, 50, 50, 'red'); // Display enemy as a red square
+        drawImg(eattack, 125, 30, 50, 50); // Display enemy as a red square
         enemyFlashFrameCount--;
     } else {
-        drawImg(enemy, 125, 10, 50, 50); // Drawing the enemy normally
+        drawImg(enemy, 125, 30, 50, 50); // Drawing the enemy normally
         enemyFlash = false; // Reset enemy flash state
     }
 
@@ -259,6 +277,27 @@ function gameLoop() {
     if (frameCount > 0) {
         frameCount--;
     }
+
+     // Update player frame for animation
+     frameCounter++;
+     if (frameCounter >= maxFrameCounter) {
+         if (playerFrame === 1) {
+             player.src = "images/catsprite2.png";
+             playerFrame = 2;
+         } else {
+             player.src = "images/catsprite1.png";
+             playerFrame = 1;
+         }
+
+         if (enemyFrame === 1) {
+            enemy.src = "images/enemysprite2.png";
+            enemyFrame = 2;
+        } else {
+            enemy.src = "images/enemysprite1.png";
+            enemyFrame = 1;
+        }
+         frameCounter = 0; // Reset frame counter
+     }
 }
 
 
@@ -312,7 +351,7 @@ function handleChoice(selectedIndex) {
 function updateHealthDisplay() {
     healthPointsElement.textContent = `Health Points: ${healthScore}`;
 }
-
+// Game over alert for when player loses the game
 function gameOver() {
     optionsElement.style.display = "none";
     questionElement.style.display = "none";
@@ -363,11 +402,18 @@ function retryQuiz() {
 // Initialize the Quiz
 loadQuestion();
 
+// Drawing a colored rectangle on the canvas
 function colorRect(x, y, w, h, c) {
     canvasContext.fillStyle = c;
     canvasContext.fillRect(x, y, w, h);
 }
 
+// Drawing an image on the canvas
 function drawImg(src, x, y, w, h) {
     canvasContext.drawImage(src, x, y, w, h);
 }
+
+// Displaying rules upon page load
+window.onload = function() {
+    alert("Rules:\n\n1. Answer the questions to defeat the enemy.\n2. Each correct answer gives you a point.\n3. Incorrect answers deduct 100 health points.\n4. Reach 0 health points to lose the game.\n5. Correctly answer 7 or more questions to win. \n\n You can retry at any point with the 'Retry' button!");
+};
