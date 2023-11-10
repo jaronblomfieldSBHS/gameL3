@@ -375,6 +375,10 @@ button:hover {
     background-color: #bc9dca;
 }
 
+.alert {
+    color: red;
+}
+
 #retryBtn {
     margin: 10px;
     padding: 10px;
@@ -423,6 +427,36 @@ button:hover {
 
     width: 90%;
     height: 300px;
+}
+
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #bc9dca;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alert-content {
+    text-align: left;
+    background-color: #9a7bb7;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */

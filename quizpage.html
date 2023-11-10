@@ -21,6 +21,20 @@
     </div>
     <div class="content">
         <div class="panel">
+            <button onclick="showCustomAlert()">Click to read rules!</button>
+            <div class="custom-alert" id="customAlert">
+                <div class="alert-content">
+                    <span class="close-btn" onclick="closeCustomAlert()">&times;</span>
+                    <h2>Rules</h2>
+                    <p>1. Answer the questions to defeat the enemy.
+                        <br>2. Each correct answer gives you 1 point.
+                        <br>3. Score 7 or more points to win.
+                        <br>4. Each incorrect answer deducts 100 health points.
+                        <br>5. Reaching 0 health points will result in losing.
+                        <br>6. Press the retry button to restart at any point!
+                    </p>
+                </div>
+            </div>
             <h1>cat quiz</h1>
             <canvas id="gameCanvas"></canvas>
             <div id="healthPoints">Health Points: 1000</div>

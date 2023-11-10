@@ -1,204 +1,204 @@
 // Quiz Questions and Answers
 const Questions = [{
-    q: "What is the scientific name for the domestic cat?",
-    a: [{
-            text: "Felis catus",
-            isCorrect: true
-        },
-        {
-            text: "Canis familiaris",
-            isCorrect: false
-        },
-        {
-            text: "Panthera leo",
-            isCorrect: false
-        },
-        {
-            text: "Oryctolagus cuniculus",
-            isCorrect: false
-        }
-    ]
-},
-{
-    q: "What's a cat's favorite bedtime story?",
-    a: [{
-            text: "Puss in Boots",
-            isCorrect: false
-        },
-        {
-            text: "The Great Catsby",
-            isCorrect: false
-        },
-        {
-            text: "Alice in Whiskerland",
-            isCorrect: true
-        },
-        {
-            text: "The Wizard of Paws",
-            isCorrect: false
-        }
-    ]
-},
-{
-    q: "How many whiskers does the average cat have?",
-    a: [{
-            text: "8",
-            isCorrect: false
-        },
-        {
-            text: "12",
-            isCorrect: false
-        },
-        {
-            text: "16",
-            isCorrect: true
-        },
-        {
-            text: "20",
-            isCorrect: false
-        }
-    ]
-},
-{
-    q: "What is a group of cats called?",
-    a: [{
-            text: "Flock",
-            isCorrect: false
-        },
-        {
-            text: "Herd",
-            isCorrect: false
-        },
-        {
-            text: "Clowder",
-            isCorrect: true
-        },
-        {
-            text: "Pack",
-            isCorrect: false
-        }
-    ]
-},
-{
-    q: "What's a cat's secret talent?",
-    a: [{
-            text: "Juggling fish",
-            isCorrect: false
-        },
-        {
-            text: "Singing opera",
-            isCorrect: false
-        },
-        {
-            text: "Breakdancing",
-            isCorrect: true
-        },
-        {
-            text: "Solving crossword puzzles",
-            isCorrect: false
-        }
-    ]
-},
-{
-    q: "What is the average lifespan of an indoor cat?",
-    a: [{
-            text: "5-8 years",
-            isCorrect: false
-        },
-        {
-            text: "10-13 years",
-            isCorrect: true
-        },
-        {
-            text: "15-18 years",
-            isCorrect: false
-        },
-        {
-            text: "20-23 years",
-            isCorrect: false
-        }
-    ]
-},
-{
-    q: "Which cat breed is known for its curly coat?",
-    a: [{
-            text: "Persian",
-            isCorrect: false
-        },
-        {
-            text: "Bengal",
-            isCorrect: false
-        },
-        {
-            text: "Scottish Fold",
-            isCorrect: true
-        },
-        {
-            text: "Russian Blue",
-            isCorrect: false
-        }
-    ]
-},
-{
-    q: "What is the largest domestic cat breed?",
-    a: [{
-            text: "Siamese",
-            isCorrect: false
-        },
-        {
-            text: "Maine Coon",
-            isCorrect: true
-        },
-        {
-            text: "Bengal",
-            isCorrect: false
-        },
-        {
-            text: "Sphynx",
-            isCorrect: false
-        }
-    ]
-},
-{
-    q: "How do cats stay fit?",
-    a: [{
-            text: "Zumba classes",
-            isCorrect: true
-        },
-        {
-            text: "Extreme hide and seek",
-            isCorrect: false
-        },
-        {
-            text: "Yoga sessions",
-            isCorrect: false
-        },
-        {
-            text: "Marathon napping",
-            isCorrect: false
-        }
-    ]
-},
-{
-    q: "What is the most popular breed of cat in the United States?",
-    a: [{
-            text: "Siamese",
-            isCorrect: false
-        },
-        {
-            text: "Persian",
-            isCorrect: false
-        },
-        {
-            text: "Maine Coon",
-            isCorrect: true
-        },
-        {
-            text: "Bengal",
-            isCorrect: false
-        }
-    ]
-}
+        q: "Question 1 - What is the scientific name for the domestic cat?",
+        a: [{
+                text: "Felis catus",
+                isCorrect: true
+            },
+            {
+                text: "Canis familiaris",
+                isCorrect: false
+            },
+            {
+                text: "Panthera leo",
+                isCorrect: false
+            },
+            {
+                text: "Oryctolagus cuniculus",
+                isCorrect: false
+            }
+        ]
+    },
+    {
+        q: "Question 2 - What's a cat's favorite bedtime story?",
+        a: [{
+                text: "Puss in Boots",
+                isCorrect: false
+            },
+            {
+                text: "The Great Catsby",
+                isCorrect: false
+            },
+            {
+                text: "Alice in Whiskerland",
+                isCorrect: true
+            },
+            {
+                text: "The Wizard of Paws",
+                isCorrect: false
+            }
+        ]
+    },
+    {
+        q: "Question 3 - How many whiskers does the average cat have?",
+        a: [{
+                text: "8",
+                isCorrect: false
+            },
+            {
+                text: "12",
+                isCorrect: false
+            },
+            {
+                text: "16",
+                isCorrect: true
+            },
+            {
+                text: "20",
+                isCorrect: false
+            }
+        ]
+    },
+    {
+        q: "Question 4 - What is a group of cats called?",
+        a: [{
+                text: "Flock",
+                isCorrect: false
+            },
+            {
+                text: "Herd",
+                isCorrect: false
+            },
+            {
+                text: "Clowder",
+                isCorrect: true
+            },
+            {
+                text: "Pack",
+                isCorrect: false
+            }
+        ]
+    },
+    {
+        q: "Question 5 - What's a cat's secret talent?",
+        a: [{
+                text: "Juggling fish",
+                isCorrect: false
+            },
+            {
+                text: "Singing opera",
+                isCorrect: false
+            },
+            {
+                text: "Breakdancing",
+                isCorrect: true
+            },
+            {
+                text: "Solving crossword puzzles",
+                isCorrect: false
+            }
+        ]
+    },
+    {
+        q: "Question 6 - What is the average lifespan of an indoor cat?",
+        a: [{
+                text: "5-8 years",
+                isCorrect: false
+            },
+            {
+                text: "10-13 years",
+                isCorrect: true
+            },
+            {
+                text: "15-18 years",
+                isCorrect: false
+            },
+            {
+                text: "20-23 years",
+                isCorrect: false
+            }
+        ]
+    },
+    {
+        q: "Question 7 - Which cat breed is known for its curly coat?",
+        a: [{
+                text: "Persian",
+                isCorrect: false
+            },
+            {
+                text: "Bengal",
+                isCorrect: false
+            },
+            {
+                text: "Scottish Fold",
+                isCorrect: true
+            },
+            {
+                text: "Russian Blue",
+                isCorrect: false
+            }
+        ]
+    },
+    {
+        q: "Question 8 - What is the largest domestic cat breed?",
+        a: [{
+                text: "Siamese",
+                isCorrect: false
+            },
+            {
+                text: "Maine Coon",
+                isCorrect: true
+            },
+            {
+                text: "Bengal",
+                isCorrect: false
+            },
+            {
+                text: "Sphynx",
+                isCorrect: false
+            }
+        ]
+    },
+    {
+        q: "Question 9 - How do cats stay fit?",
+        a: [{
+                text: "Zumba classes",
+                isCorrect: true
+            },
+            {
+                text: "Extreme hide and seek",
+                isCorrect: false
+            },
+            {
+                text: "Yoga sessions",
+                isCorrect: false
+            },
+            {
+                text: "Marathon napping",
+                isCorrect: false
+            }
+        ]
+    },
+    {
+        q: "Question 10 - What is the most popular breed of cat in New Zealand?",
+        a: [{
+                text: "Siamese",
+                isCorrect: false
+            },
+            {
+                text: "Persian",
+                isCorrect: false
+            },
+            {
+                text: "Maine Coon",
+                isCorrect: true
+            },
+            {
+                text: "Bengal",
+                isCorrect: false
+            }
+        ]
+    }
 ];
 
 // Canvas and Context Setup
@@ -248,10 +248,10 @@ function gameLoop() {
     // Clear the canvas
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
 
-     // Draw the background image
-     const backgroundImage = new Image();
-     backgroundImage.src = "images/background.png";
-     canvasContext.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+    // Draw the background image
+    const backgroundImage = new Image();
+    backgroundImage.src = "images/background.png";
+    canvasContext.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
 
     // Draw game elements
     if (frameCount > 0) {
@@ -278,26 +278,26 @@ function gameLoop() {
         frameCount--;
     }
 
-     // Update player frame for animation
-     frameCounter++;
-     if (frameCounter >= maxFrameCounter) {
-         if (playerFrame === 1) {
-             player.src = "images/catsprite2.png";
-             playerFrame = 2;
-         } else {
-             player.src = "images/catsprite1.png";
-             playerFrame = 1;
-         }
+    // Update player frame for animation
+    frameCounter++;
+    if (frameCounter >= maxFrameCounter) {
+        if (playerFrame === 1) {
+            player.src = "images/catsprite2.png";
+            playerFrame = 2;
+        } else {
+            player.src = "images/catsprite1.png";
+            playerFrame = 1;
+        }
 
-         if (enemyFrame === 1) {
+        if (enemyFrame === 1) {
             enemy.src = "images/enemysprite2.png";
             enemyFrame = 2;
         } else {
             enemy.src = "images/enemysprite1.png";
             enemyFrame = 1;
         }
-         frameCounter = 0; // Reset frame counter
-     }
+        frameCounter = 0; // Reset frame counter
+    }
 }
 
 
@@ -414,6 +414,16 @@ function drawImg(src, x, y, w, h) {
 }
 
 // Displaying rules upon page load
-window.onload = function() {
-    alert("Rules:\n\n1. Answer the questions to defeat the enemy.\n2. Each correct answer gives you a point.\n3. Incorrect answers deduct 100 health points.\n4. Reach 0 health points to lose the game.\n5. Correctly answer 7 or more questions to win. \n\n You can retry at any point with the 'Retry' button!");
-};
+// window.onload = function () {
+//     alert("Rules:\n\n1. Answer the questions to defeat the enemy.\n2. Each correct answer gives you a point.\n3. Incorrect answers deduct 100 health points.\n4. Reach 0 health points to lose the game.\n5. Correctly answer 7 or more questions to win. \n\n You can retry at any point with the 'Retry' button!");
+// };
+
+function showCustomAlert() {
+    var customAlert = document.getElementById("customAlert");
+    customAlert.style.display = "block";
+}
+
+function closeCustomAlert() {
+    var customAlert = document.getElementById("customAlert");
+    customAlert.style.display = "none";
+}
