@@ -343,6 +343,14 @@ function handleChoice(selectedIndex) {
         // Deduct 100 points for an incorrect answer
         healthScore -= 100;
         frameCount = 10; // Set frame count to 10 when health is deducted
+
+        // Change the background color of healthPoints to red
+        healthPointsElement.style.backgroundColor = '#FF0000'; // Red color
+
+        // Reset the background color after 1 second
+        setTimeout(() => {
+            healthPointsElement.style.backgroundColor = 'gray'; // Reset to original color
+        }, 1000);
     }
 
     updateHealthDisplay();
