@@ -450,9 +450,17 @@ button:hover {
     padding: 10px;
 }
 
+.alert-content h2 {
+    color: white;
+    font-family: cooper;
+    text-align: center;
+    padding: 10px;
+}
+
 .alert-content p {
     color: white;
     font-family: rubik;
+    padding: 10px;
 }
 
 .close-btn {
