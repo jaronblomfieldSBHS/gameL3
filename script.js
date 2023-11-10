@@ -248,6 +248,11 @@ function gameLoop() {
     // Clear the canvas
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
 
+    // Draw the background image
+    const backgroundImage = new Image();
+    backgroundImage.src = "images/background.png";
+    canvasContext.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+
     // Draw game elements
     if (frameCount > 0) {
         // Draw the player as red if frameCount is positive
@@ -271,6 +276,27 @@ function gameLoop() {
     // Decrement frame count
     if (frameCount > 0) {
         frameCount--;
+    }
+
+    // Update player frame for animation
+    frameCounter++;
+    if (frameCounter >= maxFrameCounter) {
+        if (playerFrame === 1) {
+            player.src = "images/catsprite2.png";
+            playerFrame = 2;
+        } else {
+            player.src = "images/catsprite1.png";
+            playerFrame = 1;
+        }
+
+        if (enemyFrame === 1) {
+            enemy.src = "images/enemysprite2.png";
+            enemyFrame = 2;
+        } else {
+            enemy.src = "images/enemysprite1.png";
+            enemyFrame = 1;
+        }
+        frameCounter = 0; // Reset frame counter
     }
 }
 
@@ -385,4 +411,19 @@ function colorRect(x, y, w, h, c) {
 // Drawing an image on the canvas
 function drawImg(src, x, y, w, h) {
     canvasContext.drawImage(src, x, y, w, h);
+}
+
+// Displaying rules upon page load
+// window.onload = function () {
+//     alert("Rules:\n\n1. Answer the questions to defeat the enemy.\n2. Each correct answer gives you a point.\n3. Incorrect answers deduct 100 health points.\n4. Reach 0 health points to lose the game.\n5. Correctly answer 7 or more questions to win. \n\n You can retry at any point with the 'Retry' button!");
+// };
+
+function showCustomAlert() {
+    var customAlert = document.getElementById("customAlert");
+    customAlert.style.display = "block";
+}
+
+function closeCustomAlert() {
+    var customAlert = document.getElementById("customAlert");
+    customAlert.style.display = "none";
 }
