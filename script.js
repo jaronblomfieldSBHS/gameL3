@@ -331,6 +331,14 @@ function handleChoice(selectedIndex) {
         // Set enemy flash frame count
         enemyFlashFrameCount = maxEnemyFlashFrameCount;
         enemyFlash = true;
+
+        // Change the background color of healthPoints to green
+        healthPointsElement.style.backgroundColor = '#4CAF50'; // Green color
+
+        // Reset the background color after 1 second
+        setTimeout(() => {
+            healthPointsElement.style.backgroundColor = 'gray'; // Reset to original color
+        }, 1000);
     } else {
         // Deduct 100 points for an incorrect answer
         healthScore -= 100;
