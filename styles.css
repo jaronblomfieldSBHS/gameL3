@@ -440,6 +440,7 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: rubik;
 }
 
 .alert-content {
@@ -447,7 +448,11 @@ button:hover {
     background-color: #9a7bb7;
     border-radius: 10px;
     padding: 10px;
+}
+
+.alert-content p {
     color: white;
+    font-family: rubik;
 }
 
 .close-btn {
@@ -456,7 +461,7 @@ button:hover {
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-    color: #555;
+    color: white;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
