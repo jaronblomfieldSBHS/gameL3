@@ -1,3 +1,8 @@
+// Prompt the user to enter a username
+const username = prompt("Enter your username:");
+// Check if the username is provided, and if not, use a default name
+const playerName = username ? username : "User";
+
 // Quiz Questions and Answers
 const Questions = [{
         q: "Question 1 - What is the scientific name for the domestic cat?",
@@ -376,16 +381,16 @@ function gameOver() {
 }
 
 // Load User's Score
-function loadScore() {
+function loadScore(playerName) {
     const scoreElement = document.getElementById("score");
-    scoreElement.textContent = `You scored ${score} out of ${Questions.length}`;
+    scoreElement.textContent = `${playerName}, you scored ${score} out of ${Questions.length}`;
 
     // Check if the total score is 7-10 and displays an alert
     if (score >= 7 && score <= 10) {
         alert("You defeated the Enemy!");
     }
 
-    //check if the total score is 1-6 and displays an alert
+    // Check if the total score is 1-6 and displays an alert
     if (score <= 6 && score >= 1) {
         alert("You did not defeat the Enemy!");
     }
@@ -407,7 +412,7 @@ function nextQuestion() {
 function showScore() {
     optionsElement.style.display = "none";
     questionElement.style.display = "none";
-    loadScore();
+    loadScore(playerName);
 }
 
 // Retry the Quiz
