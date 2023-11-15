@@ -1,5 +1,6 @@
 // Prompt the user to enter a username
 const username = prompt("Enter your username:");
+
 // Check if the username is provided, and if not, use a default name
 const playerName = username ? username : "User";
 
